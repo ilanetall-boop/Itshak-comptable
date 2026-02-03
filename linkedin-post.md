@@ -4,14 +4,17 @@
 
 ## 🔹 POST LINKEDIN
 
-**Après 55 ans de comptabilité, je mets mon expertise au service des Français d'Israël.**
+**55 ans d'expérience en conseil fiscal — et je réponds toujours au téléphone.**
 
-L'expatriation en Israël ne vous dispense pas de vos obligations fiscales françaises. Et je sais combien c'est compliqué de gérer ça à distance.
+Vous en avez assez d'attendre des semaines pour une simple réponse de votre cabinet ? De parler à un standardiste qui ne connaît pas votre dossier ?
 
-C'est pourquoi je propose mes services aux Français installés en Israël :
+Ma différence : **proximité et réactivité**. Vous m'appelez, je réponds. Votre question ne reste pas sans réponse pendant des jours.
+
+Je propose mes services aux Français installés en Israël :
 
 🔹 **Déclaration des revenus** — Respect des délais, optimisation fiscale
 🔹 **Dossiers retraite** — Reconstitution de carrière, calcul des droits
+🔹 **Création de société ou SCI** — Statuts, formalités, immatriculation
 🔹 **Gestion de SCI** — Bilans, liasses fiscales, AG
 🔹 **Conseil fiscal** — Convention France-Israël, double imposition
 

@@ -7,22 +7,25 @@
 **RECTO :**
 ```
 ITSHAK TALL
-Expert-Comptable
+Consultant Fiscal
 
 📞 058-523-2221
 📍 Ashdod, Israël
 
-Services aux Français en Israël
+⚡ Réponse rapide garantie
 ```
 
 **VERSO :**
 ```
 ✓ Déclaration de revenus France
 ✓ Dossiers retraite française
-✓ Comptabilité SCI
+✓ Création & gestion de SCI
+✓ Constitution de société
 ✓ Conseil fiscal France-Israël
 
 ⭐ 55 ans d'expérience
+💬 Disponible et réactif
+   (pas comme les gros cabinets !)
 ```
 
 ---
@@ -33,9 +36,14 @@ Services aux Français en Israël
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
         ITSHAK TALL
-      Expert-Comptable
+      Consultant Fiscal
    
    ⭐ 55 ANS D'EXPÉRIENCE ⭐
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  ⚡ RÉPONSE RAPIDE GARANTIE ⚡
+   Fini l'attente des gros cabinets !
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
@@ -57,6 +65,11 @@ Services aux Français en Israël
    Bilans et liasses fiscales
    Procès-verbaux d'AG
    Déclarations 2072
+
+🏛️ CONSTITUTION DE SOCIÉTÉ
+   Création de SCI ou société
+   Rédaction des statuts
+   Formalités juridiques
 
 📊 CONSEIL FISCAL
    Convention France-Israël
@@ -86,12 +99,14 @@ Services aux Français en Israël
 
 Bonjour,
 
-Je me permets de vous contacter car je propose des services de comptabilité spécialement adaptés aux Français vivant en Israël.
+Je me permets de vous contacter car je propose des services de conseil fiscal spécialement adaptés aux Français vivant en Israël.
 
-Avec 55 ans d'expérience en comptabilité française, j'accompagne les expatriés dans :
+**Ma différence ?** Contrairement aux gros cabinets où l'on attend des semaines pour une réponse, je suis disponible et réactif. Vous m'appelez, je réponds.
+
+Avec 55 ans d'expérience, j'accompagne les expatriés dans :
 - Leur déclaration annuelle de revenus en France
 - La préparation de leurs dossiers retraite
-- La gestion de leurs SCI
+- La création et gestion de SCI ou sociétés
 
 Basé à Ashdod, je travaille aussi bien en personne qu'à distance.
 
@@ -102,8 +117,8 @@ Je reste à votre disposition pour toute question.
 Cordialement,
 
 Itshak Tall
-Expert-Comptable
-📞 058-523-2221
+Consultant Fiscal — 55 ans d'expérience
+📞 058-523-2221 (réponse rapide !)
 📍 Ashdod, Israël
 
 ---

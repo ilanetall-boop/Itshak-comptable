@@ -4,22 +4,24 @@
 
 ---
 
-🇫🇷🇮🇱 **Français en Israël ? Vos démarches fiscales françaises vous donnent des maux de tête ?**
+🇫🇷🇮🇱 **Français en Israël ? Marre d'attendre des semaines pour une réponse de votre cabinet ?**
 
-Je suis Itshak Tall, comptable avec **55 ans d'expérience**, installé à Ashdod.
+Je suis Itshak Tall, consultant fiscal avec **55 ans d'expérience**.
+
+⚡ **Ma différence ?** Je réponds rapidement — souvent dans l'heure. Pas de standardiste, pas de "votre dossier est en cours de traitement". Vous m'appelez, je réponds.
 
 J'accompagne les Français d'Israël dans :
 ✅ Déclaration annuelle des revenus en France
 ✅ Préparation des dossiers retraite française
-✅ Gestion et déclaration des SCI
+✅ Création et gestion de SCI ou sociétés
 ✅ Conseil fiscal France-Israël
 
 💡 **Première consultation gratuite** pour évaluer votre situation.
 
-📱 WhatsApp : 058-523-2221
+📱 WhatsApp : 058-523-2221 (réponse rapide !)
 📍 Ashdod (ou à distance)
 
-*Un professionnel qui parle votre langue et comprend votre situation d'expatrié.*
+*Fini la lenteur des gros cabinets. Un service proche, réactif, humain.*
 
 ---
 
@@ -45,19 +47,20 @@ Ne laissez pas l'administration française vous décourager !
 
 ---
 
-## 📝 POST 3 — Focus SCI
+## 📝 POST 3 — Focus SCI & Création de société
 
 ---
 
-🏠 **Vous avez une SCI en France ?**
+🏛️ **Vous voulez créer une SCI ou société en France depuis Israël ?**
 
-Même depuis Israël, les obligations comptables et fiscales continuent :
-- Bilan annuel
-- Liasse fiscale
-- Procès-verbaux d'AG
-- Déclarations 2072
+Ou vous en avez déjà une et les obligations comptables vous dépassent ?
 
-Je m'occupe de tout pour vous, à distance.
+Je vous accompagne de A à Z :
+✅ **Création** : statuts, formalités, immatriculation
+✅ **Gestion** : bilan annuel, liasse fiscale, PV d'AG
+✅ Déclarations 2072
+
+Tout se fait à distance, en toute simplicité.
 
 **Itshak Tall** — 55 ans d'expérience
 📱 058-523-2221
