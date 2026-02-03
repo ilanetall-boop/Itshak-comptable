@@ -3,11 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Itshak Tall - Comptable Expert | Services aux Français en Israël</title>
+    <title>Itshak Tall - Expert-Comptable | Services aux Français en Israël</title>
     <meta name="description" content="55 ans d'expérience en comptabilité française. Déclarations fiscales, dossiers retraite, SCI. Service personnalisé pour les Français vivant en Israël.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
+        :root {
+            --primary: #1a365d;
+            --primary-dark: #0f2442;
+            --gold: #c9a84c;
+            --gold-light: #d4b96a;
+            --text: #2d3748;
+            --text-light: #718096;
+            --white: #ffffff;
+            --bg-light: #f8f9fa;
+        }
+
         * {
             margin: 0;
             padding: 0;
@@ -15,229 +27,464 @@
         }
 
         body {
-            font-family: 'Open Sans', sans-serif;
-            line-height: 1.6;
-            color: #2C3E50;
-            background: #FAFBFC;
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.7;
+            color: var(--text);
+            background: var(--white);
         }
 
-        /* Header */
-        .header {
-            background: linear-gradient(135deg, #1e3a5f 0%, #2c5282 100%);
-            color: white;
-            padding: 60px 20px 80px;
-            text-align: center;
+        h1, h2, h3 {
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        /* Navigation */
+        .nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: rgba(26, 54, 93, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 15px 0;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: var(--white);
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        .logo span {
+            color: var(--gold);
+        }
+
+        .nav-contact {
+            color: var(--white);
+            text-decoration: none;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: color 0.3s;
+        }
+
+        .nav-contact:hover {
+            color: var(--gold);
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            background: linear-gradient(135deg, rgba(26, 54, 93, 0.92) 0%, rgba(15, 36, 66, 0.95) 100%),
+                        url('https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=1920&q=80') center/cover;
+            display: flex;
+            align-items: center;
+            padding: 120px 30px 80px;
             position: relative;
         }
 
-        .header::after {
-            content: '';
-            position: absolute;
-            bottom: -30px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 100px;
-            height: 60px;
-            background: #FAFBFC;
-            border-radius: 50% 50% 0 0;
+        .hero-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
         }
 
-        .header h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: 2.5rem;
-            margin-bottom: 10px;
+        .hero-content {
+            color: var(--white);
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(201, 168, 76, 0.15);
+            border: 1px solid var(--gold);
+            padding: 10px 20px;
+            border-radius: 30px;
+            font-size: 0.85rem;
+            color: var(--gold);
+            margin-bottom: 25px;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
             font-weight: 700;
-        }
-
-        .header .subtitle {
-            font-size: 1.2rem;
-            opacity: 0.9;
+            line-height: 1.2;
             margin-bottom: 20px;
         }
 
-        .experience-badge {
-            display: inline-block;
-            background: #E6B800;
-            color: #1e3a5f;
-            padding: 10px 25px;
-            border-radius: 30px;
-            font-weight: 600;
-            font-size: 1.1rem;
-            margin-top: 15px;
+        .hero h1 span {
+            color: var(--gold);
         }
 
-        /* Main Content */
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        /* Intro Section */
-        .intro {
-            text-align: center;
-            padding: 50px 20px;
-            background: white;
-            margin: -20px 20px 30px;
-            border-radius: 15px;
-            box-shadow: 0 5px 30px rgba(0,0,0,0.08);
-            position: relative;
-            z-index: 10;
-        }
-
-        .intro h2 {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.8rem;
-            color: #1e3a5f;
-            margin-bottom: 15px;
-        }
-
-        .intro p {
-            color: #5a6c7d;
-            font-size: 1.1rem;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        /* Services Section */
-        .services {
-            padding: 40px 0;
-        }
-
-        .services h2 {
-            font-family: 'Playfair Display', serif;
-            font-size: 2rem;
-            text-align: center;
-            color: #1e3a5f;
-            margin-bottom: 40px;
-        }
-
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 25px;
-        }
-
-        .service-card {
-            background: white;
-            padding: 35px 30px;
-            border-radius: 15px;
-            box-shadow: 0 3px 20px rgba(0,0,0,0.06);
-            transition: transform 0.3s, box-shadow 0.3s;
-            border-left: 4px solid #E6B800;
-        }
-
-        .service-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 35px rgba(0,0,0,0.1);
-        }
-
-        .service-card h3 {
-            font-size: 1.3rem;
-            color: #1e3a5f;
-            margin-bottom: 12px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .service-card p {
-            color: #5a6c7d;
-            font-size: 0.95rem;
-        }
-
-        .service-icon {
-            font-size: 1.5rem;
-        }
-
-        /* Why Choose Section */
-        .why-choose {
-            background: linear-gradient(135deg, #1e3a5f 0%, #2c5282 100%);
-            color: white;
-            padding: 60px 20px;
-            margin: 50px 0;
-            border-radius: 20px;
-        }
-
-        .why-choose h2 {
-            font-family: 'Playfair Display', serif;
-            font-size: 2rem;
-            text-align: center;
-            margin-bottom: 40px;
-        }
-
-        .benefits-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 30px;
-            text-align: center;
-        }
-
-        .benefit {
-            padding: 20px;
-        }
-
-        .benefit-icon {
-            font-size: 3rem;
-            margin-bottom: 15px;
-        }
-
-        .benefit h3 {
-            font-size: 1.2rem;
-            margin-bottom: 10px;
-        }
-
-        .benefit p {
+        .hero-subtitle {
+            font-size: 1.25rem;
             opacity: 0.9;
-            font-size: 0.95rem;
+            margin-bottom: 35px;
+            line-height: 1.8;
         }
 
-        /* Contact Section */
-        .contact {
-            background: white;
-            padding: 50px 30px;
-            border-radius: 20px;
-            box-shadow: 0 5px 30px rgba(0,0,0,0.08);
-            text-align: center;
-            margin-bottom: 40px;
-        }
-
-        .contact h2 {
-            font-family: 'Playfair Display', serif;
-            font-size: 2rem;
-            color: #1e3a5f;
-            margin-bottom: 15px;
-        }
-
-        .contact p {
-            color: #5a6c7d;
-            margin-bottom: 30px;
-            font-size: 1.1rem;
-        }
-
-        .contact-buttons {
+        .hero-cta {
             display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
             gap: 15px;
-            margin-bottom: 30px;
+            flex-wrap: wrap;
         }
 
         .btn {
             display: inline-flex;
             align-items: center;
             gap: 10px;
-            padding: 15px 30px;
-            border-radius: 10px;
+            padding: 16px 32px;
+            border-radius: 8px;
             text-decoration: none;
             font-weight: 600;
-            font-size: 1.1rem;
-            transition: transform 0.3s, box-shadow 0.3s;
+            font-size: 1rem;
+            transition: all 0.3s;
+            border: 2px solid transparent;
         }
 
-        .btn:hover {
+        .btn-primary {
+            background: var(--gold);
+            color: var(--primary-dark);
+        }
+
+        .btn-primary:hover {
+            background: var(--gold-light);
             transform: translateY(-2px);
-            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+            box-shadow: 0 10px 30px rgba(201, 168, 76, 0.3);
+        }
+
+        .btn-outline {
+            border-color: var(--white);
+            color: var(--white);
+            background: transparent;
+        }
+
+        .btn-outline:hover {
+            background: var(--white);
+            color: var(--primary);
+        }
+
+        .hero-image {
+            position: relative;
+        }
+
+        .hero-image img {
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 30px 60px rgba(0,0,0,0.3);
+        }
+
+        .hero-stats {
+            position: absolute;
+            bottom: -30px;
+            left: -30px;
+            background: var(--white);
+            padding: 25px 35px;
+            border-radius: 15px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+        }
+
+        .hero-stats-number {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--gold);
+            line-height: 1;
+        }
+
+        .hero-stats-label {
+            font-size: 0.9rem;
+            color: var(--text-light);
+        }
+
+        /* Trust Badges */
+        .trust-section {
+            background: var(--bg-light);
+            padding: 40px 30px;
+        }
+
+        .trust-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 60px;
+            flex-wrap: wrap;
+        }
+
+        .trust-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            color: var(--text-light);
+        }
+
+        .trust-item i {
+            font-size: 1.5rem;
+            color: var(--gold);
+        }
+
+        /* Services Section */
+        .services {
+            padding: 100px 30px;
+        }
+
+        .section-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-header h2 {
+            font-size: 2.8rem;
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+
+        .section-header p {
+            color: var(--text-light);
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background: var(--white);
+            border-radius: 20px;
+            padding: 40px 30px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+            transition: all 0.3s;
+            border: 1px solid #eee;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: var(--gold);
+            transform: scaleX(0);
+            transition: transform 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+        }
+
+        .service-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .service-icon {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 25px;
+        }
+
+        .service-icon i {
+            font-size: 1.8rem;
+            color: var(--gold);
+        }
+
+        .service-card h3 {
+            font-size: 1.5rem;
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+
+        .service-card p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+
+        /* About Section */
+        .about {
+            padding: 100px 30px;
+            background: var(--primary);
+            color: var(--white);
+        }
+
+        .about-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+        }
+
+        .about-image {
+            position: relative;
+        }
+
+        .about-image img {
+            width: 100%;
+            border-radius: 20px;
+        }
+
+        .about-image::after {
+            content: '';
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            right: -30px;
+            bottom: -30px;
+            border: 3px solid var(--gold);
+            border-radius: 20px;
+            z-index: -1;
+        }
+
+        .about-content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 25px;
+        }
+
+        .about-content h2 span {
+            color: var(--gold);
+        }
+
+        .about-content p {
+            opacity: 0.9;
+            margin-bottom: 30px;
+            font-size: 1.05rem;
+        }
+
+        .about-features {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .about-feature {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .about-feature i {
+            color: var(--gold);
+            font-size: 1.2rem;
+        }
+
+        /* Expertise Section */
+        .expertise {
+            padding: 100px 30px;
+            background: var(--bg-light);
+        }
+
+        .expertise-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+        }
+
+        .expertise-item {
+            text-align: center;
+            padding: 40px 20px;
+            background: var(--white);
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+        }
+
+        .expertise-number {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: var(--gold);
+            line-height: 1;
+            margin-bottom: 10px;
+        }
+
+        .expertise-label {
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 100px 30px;
+        }
+
+        .contact-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            border-radius: 30px;
+            padding: 60px;
+            text-align: center;
+            color: var(--white);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact-container::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 400px;
+            height: 400px;
+            background: rgba(201, 168, 76, 0.1);
+            border-radius: 50%;
+        }
+
+        .contact h2 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            position: relative;
+        }
+
+        .contact p {
+            opacity: 0.9;
+            margin-bottom: 40px;
+            font-size: 1.1rem;
+            position: relative;
+        }
+
+        .contact-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+            position: relative;
         }
 
         .btn-whatsapp {
@@ -245,140 +492,335 @@
             color: white;
         }
 
-        .btn-phone {
-            background: #1e3a5f;
-            color: white;
+        .btn-whatsapp:hover {
+            background: #20bd5a;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(37, 211, 102, 0.3);
         }
 
-        .location {
+        .btn-call {
+            background: var(--white);
+            color: var(--primary);
+        }
+
+        .btn-call:hover {
+            background: var(--gold);
+            color: var(--primary-dark);
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            position: relative;
+        }
+
+        .contact-info-item {
             display: flex;
             align-items: center;
-            justify-content: center;
-            gap: 8px;
-            color: #5a6c7d;
-            font-size: 1rem;
+            gap: 10px;
+            opacity: 0.9;
+        }
+
+        .contact-info-item i {
+            color: var(--gold);
         }
 
         /* Footer */
         .footer {
+            background: var(--primary-dark);
+            color: var(--white);
+            padding: 40px 30px;
             text-align: center;
-            padding: 30px 20px;
-            color: #7f8c9a;
+        }
+
+        .footer p {
+            opacity: 0.7;
             font-size: 0.9rem;
         }
 
         /* Responsive */
+        @media (max-width: 968px) {
+            .hero-container {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-cta {
+                justify-content: center;
+            }
+
+            .hero-image {
+                display: none;
+            }
+
+            .about-container {
+                grid-template-columns: 1fr;
+            }
+
+            .about-image {
+                display: none;
+            }
+
+            .expertise-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
         @media (max-width: 600px) {
-            .header h1 {
+            .hero h1 {
                 font-size: 2rem;
             }
 
-            .header .subtitle {
-                font-size: 1rem;
-            }
-
-            .intro {
-                margin: -20px 10px 30px;
-                padding: 40px 20px;
-            }
-
-            .services h2, .why-choose h2, .contact h2 {
-                font-size: 1.6rem;
+            .section-header h2 {
+                font-size: 2rem;
             }
 
             .btn {
                 width: 100%;
                 justify-content: center;
             }
+
+            .expertise-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .contact-container {
+                padding: 40px 25px;
+            }
+
+            .trust-container {
+                flex-direction: column;
+                gap: 20px;
+            }
         }
     </style>
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
-        <h1>Itshak Tall</h1>
-        <p class="subtitle">Expert-Comptable | Services aux Français en Israël</p>
-        <div class="experience-badge">⭐ 55 ans d'expérience</div>
-    </header>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="#" class="logo">Itshak <span>Tall</span></a>
+            <a href="tel:+9720585232221" class="nav-contact">
+                <i class="fas fa-phone"></i>
+                058-523-2221
+            </a>
+        </div>
+    </nav>
 
-    <!-- Intro -->
-    <section class="intro">
-        <h2>Vous êtes Français en Israël ?</h2>
-        <p>Simplifiez vos démarches administratives et fiscales en France. Un accompagnement personnalisé par un expert qui comprend votre situation d'expatrié.</p>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-award"></i>
+                    Expert-Comptable depuis 1970
+                </div>
+                <h1>Vos démarches fiscales <span>françaises</span> simplifiées</h1>
+                <p class="hero-subtitle">
+                    Spécialiste des Français résidant en Israël. Déclarations de revenus, 
+                    dossiers retraite, gestion de SCI — je m'occupe de tout depuis Ashdod.
+                </p>
+                <div class="hero-cta">
+                    <a href="https://wa.me/9720585232221?text=Bonjour%20Itshak,%20je%20souhaite%20un%20renseignement%20sur%20vos%20services." class="btn btn-primary">
+                        <i class="fab fa-whatsapp"></i>
+                        Consultation gratuite
+                    </a>
+                    <a href="#services" class="btn btn-outline">
+                        Découvrir mes services
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=600&q=80" alt="Expert comptable professionnel">
+                <div class="hero-stats">
+                    <div class="hero-stats-number">55</div>
+                    <div class="hero-stats-label">années d'expérience</div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- Services -->
-    <div class="container">
-        <section class="services">
-            <h2>Mes Services</h2>
+    <!-- Trust Badges -->
+    <section class="trust-section">
+        <div class="trust-container">
+            <div class="trust-item">
+                <i class="fas fa-shield-halved"></i>
+                <span>Confidentialité garantie</span>
+            </div>
+            <div class="trust-item">
+                <i class="fas fa-comments"></i>
+                <span>Accompagnement personnalisé</span>
+            </div>
+            <div class="trust-item">
+                <i class="fas fa-globe"></i>
+                <span>Service à distance disponible</span>
+            </div>
+            <div class="trust-item">
+                <i class="fas fa-hand-holding-dollar"></i>
+                <span>Tarifs transparents</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="section-container">
+            <div class="section-header">
+                <h2>Mes Services</h2>
+                <p>Un accompagnement complet pour toutes vos démarches administratives et fiscales en France</p>
+            </div>
             <div class="services-grid">
                 <div class="service-card">
-                    <h3><span class="service-icon">📋</span> Déclaration de Revenus</h3>
-                    <p>Déclaration annuelle des revenus en France, optimisation fiscale, respect des délais et des obligations pour les non-résidents.</p>
+                    <div class="service-icon">
+                        <i class="fas fa-file-invoice-dollar"></i>
+                    </div>
+                    <h3>Déclaration de Revenus</h3>
+                    <p>Déclaration annuelle des revenus français pour les non-résidents. Optimisation fiscale et respect des délais légaux.</p>
                 </div>
                 <div class="service-card">
-                    <h3><span class="service-icon">🏠</span> Déclaration SCI</h3>
-                    <p>Gestion comptable et fiscale de vos Sociétés Civiles Immobilières en France. Bilans, liasses fiscales, assemblées générales.</p>
+                    <div class="service-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Gestion de SCI</h3>
+                    <p>Comptabilité complète de vos Sociétés Civiles Immobilières. Bilans, liasses fiscales 2072, procès-verbaux d'AG.</p>
                 </div>
                 <div class="service-card">
-                    <h3><span class="service-icon">👴</span> Dossier Retraite France</h3>
-                    <p>Préparation complète de votre dossier retraite française : reconstitution de carrière, calcul des droits, liaison avec les caisses.</p>
+                    <div class="service-icon">
+                        <i class="fas fa-user-clock"></i>
+                    </div>
+                    <h3>Dossier Retraite</h3>
+                    <p>Préparation complète de votre dossier retraite française. Reconstitution de carrière et calcul de vos droits.</p>
                 </div>
                 <div class="service-card">
-                    <h3><span class="service-icon">📊</span> Conseil Fiscal</h3>
-                    <p>Optimisation de votre situation fiscale France-Israël, convention de non double imposition, stratégie patrimoniale.</p>
+                    <div class="service-icon">
+                        <i class="fas fa-scale-balanced"></i>
+                    </div>
+                    <h3>Conseil Fiscal</h3>
+                    <p>Optimisation de votre situation fiscale France-Israël. Convention de non double imposition.</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Why Choose -->
-        <section class="why-choose">
-            <h2>Pourquoi me faire confiance ?</h2>
-            <div class="benefits-grid">
-                <div class="benefit">
-                    <div class="benefit-icon">🏆</div>
-                    <h3>55 ans d'expertise</h3>
-                    <p>Une carrière entière dédiée à la comptabilité et à la fiscalité française</p>
-                </div>
-                <div class="benefit">
-                    <div class="benefit-icon">🇮🇱</div>
-                    <h3>Basé en Israël</h3>
-                    <p>Je comprends parfaitement les enjeux des Français expatriés en Israël</p>
-                </div>
-                <div class="benefit">
-                    <div class="benefit-icon">🤝</div>
-                    <h3>Service personnalisé</h3>
-                    <p>Un interlocuteur unique, disponible et à l'écoute de votre situation</p>
-                </div>
-                <div class="benefit">
-                    <div class="benefit-icon">💬</div>
-                    <h3>En français</h3>
-                    <p>Communication claire et simple, sans barrière linguistique</p>
+    <!-- About Section -->
+    <section class="about">
+        <div class="about-container">
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1551836022-deb4988cc6c0?w=600&q=80" alt="Bureau professionnel">
+            </div>
+            <div class="about-content">
+                <h2>Pourquoi choisir <span>Itshak Tall</span> ?</h2>
+                <p>
+                    Depuis plus de 55 ans, j'accompagne mes clients dans leurs démarches comptables 
+                    et fiscales. Installé en Israël, je comprends parfaitement les défis auxquels 
+                    font face les Français expatriés pour maintenir leurs obligations administratives en France.
+                </p>
+                <p>
+                    Mon expertise vous garantit un traitement rigoureux de vos dossiers, 
+                    dans le respect des délais et de la réglementation française en vigueur.
+                </p>
+                <div class="about-features">
+                    <div class="about-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>55 ans d'expérience</span>
+                    </div>
+                    <div class="about-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Basé en Israël</span>
+                    </div>
+                    <div class="about-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Service en français</span>
+                    </div>
+                    <div class="about-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Disponible par WhatsApp</span>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Contact -->
-        <section class="contact">
-            <h2>Contactez-moi</h2>
-            <p>Première consultation gratuite pour évaluer vos besoins</p>
+    <!-- Expertise Section -->
+    <section class="expertise">
+        <div class="section-container">
+            <div class="section-header">
+                <h2>Mon Expertise en Chiffres</h2>
+            </div>
+            <div class="expertise-grid">
+                <div class="expertise-item">
+                    <div class="expertise-number">55</div>
+                    <div class="expertise-label">Années d'expérience</div>
+                </div>
+                <div class="expertise-item">
+                    <div class="expertise-number">500+</div>
+                    <div class="expertise-label">Clients accompagnés</div>
+                </div>
+                <div class="expertise-item">
+                    <div class="expertise-number">100%</div>
+                    <div class="expertise-label">En français</div>
+                </div>
+                <div class="expertise-item">
+                    <div class="expertise-number">24h</div>
+                    <div class="expertise-label">Délai de réponse</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="contact-container">
+            <h2>Parlons de votre situation</h2>
+            <p>Première consultation gratuite et sans engagement</p>
             <div class="contact-buttons">
-                <a href="https://wa.me/9720585232221?text=Bonjour%20Itshak,%20je%20suis%20int%C3%A9ress%C3%A9(e)%20par%20vos%20services%20de%20comptabilit%C3%A9." class="btn btn-whatsapp">
-                    <span>📱</span> WhatsApp
+                <a href="https://wa.me/9720585232221?text=Bonjour%20Itshak,%20je%20souhaite%20un%20renseignement%20sur%20vos%20services." class="btn btn-whatsapp">
+                    <i class="fab fa-whatsapp"></i>
+                    Écrire sur WhatsApp
                 </a>
-                <a href="tel:+9720585232221" class="btn btn-phone">
-                    <span>📞</span> 058-523-2221
+                <a href="tel:+9720585232221" class="btn btn-call">
+                    <i class="fas fa-phone"></i>
+                    058-523-2221
                 </a>
             </div>
-            <div class="location">
-                <span>📍</span> Ashdod, Israël — Consultations en personne ou à distance
+            <div class="contact-info">
+                <div class="contact-info-item">
+                    <i class="fas fa-location-dot"></i>
+                    <span>Ashdod, Israël</span>
+                </div>
+                <div class="contact-info-item">
+                    <i class="fas fa-clock"></i>
+                    <span>Dim - Jeu : 9h - 18h</span>
+                </div>
+                <div class="contact-info-item">
+                    <i class="fas fa-video"></i>
+                    <span>Consultations à distance</span>
+                </div>
             </div>
-        </section>
-    </div>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <p>© 2026 Itshak Tall — Expert-Comptable | Tous droits réservés</p>
+        <p>© 2026 Itshak Tall — Expert-Comptable | Services aux Français en Israël</p>
     </footer>
+
+    <script>
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
