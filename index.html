@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Itshak Tall - Comptable Expert | Services aux Français en Israël</title>
+    <meta name="description" content="55 ans d'expérience en comptabilité française. Déclarations fiscales, dossiers retraite, SCI. Service personnalisé pour les Français vivant en Israël.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            color: #2C3E50;
+            background: #FAFBFC;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #1e3a5f 0%, #2c5282 100%);
+            color: white;
+            padding: 60px 20px 80px;
+            text-align: center;
+            position: relative;
+        }
+
+        .header::after {
+            content: '';
+            position: absolute;
+            bottom: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 60px;
+            background: #FAFBFC;
+            border-radius: 50% 50% 0 0;
+        }
+
+        .header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .header .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 20px;
+        }
+
+        .experience-badge {
+            display: inline-block;
+            background: #E6B800;
+            color: #1e3a5f;
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-top: 15px;
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Intro Section */
+        .intro {
+            text-align: center;
+            padding: 50px 20px;
+            background: white;
+            margin: -20px 20px 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 30px rgba(0,0,0,0.08);
+            position: relative;
+            z-index: 10;
+        }
+
+        .intro h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            color: #1e3a5f;
+            margin-bottom: 15px;
+        }
+
+        .intro p {
+            color: #5a6c7d;
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 40px 0;
+        }
+
+        .services h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            text-align: center;
+            color: #1e3a5f;
+            margin-bottom: 40px;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .service-card {
+            background: white;
+            padding: 35px 30px;
+            border-radius: 15px;
+            box-shadow: 0 3px 20px rgba(0,0,0,0.06);
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-left: 4px solid #E6B800;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 35px rgba(0,0,0,0.1);
+        }
+
+        .service-card h3 {
+            font-size: 1.3rem;
+            color: #1e3a5f;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .service-card p {
+            color: #5a6c7d;
+            font-size: 0.95rem;
+        }
+
+        .service-icon {
+            font-size: 1.5rem;
+        }
+
+        /* Why Choose Section */
+        .why-choose {
+            background: linear-gradient(135deg, #1e3a5f 0%, #2c5282 100%);
+            color: white;
+            padding: 60px 20px;
+            margin: 50px 0;
+            border-radius: 20px;
+        }
+
+        .why-choose h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            text-align: center;
+        }
+
+        .benefit {
+            padding: 20px;
+        }
+
+        .benefit-icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+
+        .benefit h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .benefit p {
+            opacity: 0.9;
+            font-size: 0.95rem;
+        }
+
+        /* Contact Section */
+        .contact {
+            background: white;
+            padding: 50px 30px;
+            border-radius: 20px;
+            box-shadow: 0 5px 30px rgba(0,0,0,0.08);
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .contact h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            color: #1e3a5f;
+            margin-bottom: 15px;
+        }
+
+        .contact p {
+            color: #5a6c7d;
+            margin-bottom: 30px;
+            font-size: 1.1rem;
+        }
+
+        .contact-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 15px 30px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+        }
+
+        .btn-whatsapp {
+            background: #25D366;
+            color: white;
+        }
+
+        .btn-phone {
+            background: #1e3a5f;
+            color: white;
+        }
+
+        .location {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            color: #5a6c7d;
+            font-size: 1rem;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 30px 20px;
+            color: #7f8c9a;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .header .subtitle {
+                font-size: 1rem;
+            }
+
+            .intro {
+                margin: -20px 10px 30px;
+                padding: 40px 20px;
+            }
+
+            .services h2, .why-choose h2, .contact h2 {
+                font-size: 1.6rem;
+            }
+
+            .btn {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <h1>Itshak Tall</h1>
+        <p class="subtitle">Expert-Comptable | Services aux Français en Israël</p>
+        <div class="experience-badge">⭐ 55 ans d'expérience</div>
+    </header>
+
+    <!-- Intro -->
+    <section class="intro">
+        <h2>Vous êtes Français en Israël ?</h2>
+        <p>Simplifiez vos démarches administratives et fiscales en France. Un accompagnement personnalisé par un expert qui comprend votre situation d'expatrié.</p>
+    </section>
+
+    <!-- Services -->
+    <div class="container">
+        <section class="services">
+            <h2>Mes Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3><span class="service-icon">📋</span> Déclaration de Revenus</h3>
+                    <p>Déclaration annuelle des revenus en France, optimisation fiscale, respect des délais et des obligations pour les non-résidents.</p>
+                </div>
+                <div class="service-card">
+                    <h3><span class="service-icon">🏠</span> Déclaration SCI</h3>
+                    <p>Gestion comptable et fiscale de vos Sociétés Civiles Immobilières en France. Bilans, liasses fiscales, assemblées générales.</p>
+                </div>
+                <div class="service-card">
+                    <h3><span class="service-icon">👴</span> Dossier Retraite France</h3>
+                    <p>Préparation complète de votre dossier retraite française : reconstitution de carrière, calcul des droits, liaison avec les caisses.</p>
+                </div>
+                <div class="service-card">
+                    <h3><span class="service-icon">📊</span> Conseil Fiscal</h3>
+                    <p>Optimisation de votre situation fiscale France-Israël, convention de non double imposition, stratégie patrimoniale.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose -->
+        <section class="why-choose">
+            <h2>Pourquoi me faire confiance ?</h2>
+            <div class="benefits-grid">
+                <div class="benefit">
+                    <div class="benefit-icon">🏆</div>
+                    <h3>55 ans d'expertise</h3>
+                    <p>Une carrière entière dédiée à la comptabilité et à la fiscalité française</p>
+                </div>
+                <div class="benefit">
+                    <div class="benefit-icon">🇮🇱</div>
+                    <h3>Basé en Israël</h3>
+                    <p>Je comprends parfaitement les enjeux des Français expatriés en Israël</p>
+                </div>
+                <div class="benefit">
+                    <div class="benefit-icon">🤝</div>
+                    <h3>Service personnalisé</h3>
+                    <p>Un interlocuteur unique, disponible et à l'écoute de votre situation</p>
+                </div>
+                <div class="benefit">
+                    <div class="benefit-icon">💬</div>
+                    <h3>En français</h3>
+                    <p>Communication claire et simple, sans barrière linguistique</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="contact">
+            <h2>Contactez-moi</h2>
+            <p>Première consultation gratuite pour évaluer vos besoins</p>
+            <div class="contact-buttons">
+                <a href="https://wa.me/9720585232221?text=Bonjour%20Itshak,%20je%20suis%20int%C3%A9ress%C3%A9(e)%20par%20vos%20services%20de%20comptabilit%C3%A9." class="btn btn-whatsapp">
+                    <span>📱</span> WhatsApp
+                </a>
+                <a href="tel:+9720585232221" class="btn btn-phone">
+                    <span>📞</span> 058-523-2221
+                </a>
+            </div>
+            <div class="location">
+                <span>📍</span> Ashdod, Israël — Consultations en personne ou à distance
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2026 Itshak Tall — Expert-Comptable | Tous droits réservés</p>
+    </footer>
+</body>
+</html>
