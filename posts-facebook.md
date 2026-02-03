@@ -14,7 +14,6 @@ J'accompagne les Français d'Israël dans :
 ✅ Déclaration annuelle des revenus en France
 ✅ Préparation des dossiers retraite française
 ✅ Création et gestion de SCI ou sociétés
-✅ Conseil fiscal France-Israël
 
 💡 **Première consultation gratuite** pour évaluer votre situation.
 

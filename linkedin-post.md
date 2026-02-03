@@ -16,7 +16,6 @@ Je propose mes services aux Français installés en Israël :
 🔹 **Dossiers retraite** — Reconstitution de carrière, calcul des droits
 🔹 **Création de société ou SCI** — Statuts, formalités, immatriculation
 🔹 **Gestion de SCI** — Bilans, liasses fiscales, AG
-🔹 **Conseil fiscal** — Convention France-Israël, double imposition
 
 📍 Basé à Ashdod, je reçois en personne ou travaille à distance.
 

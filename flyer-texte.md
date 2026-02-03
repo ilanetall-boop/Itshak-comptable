@@ -21,7 +21,6 @@ Consultant Fiscal
 ✓ Dossiers retraite française
 ✓ Création & gestion de SCI
 ✓ Constitution de société
-✓ Conseil fiscal France-Israël
 
 ⭐ 55 ans d'expérience
 💬 Disponible et réactif
@@ -70,10 +69,6 @@ Consultant Fiscal
    Création de SCI ou société
    Rédaction des statuts
    Formalités juridiques
-
-📊 CONSEIL FISCAL
-   Convention France-Israël
-   Éviter la double imposition
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
